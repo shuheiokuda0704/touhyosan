@@ -5,6 +5,7 @@ ruby '3.1.2'
 
 gem 'rails', '~> 7.0.4'
 
+gem 'acts_as_list'
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
 gem 'jbuilder'

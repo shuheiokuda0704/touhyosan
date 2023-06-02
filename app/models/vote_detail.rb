@@ -2,6 +2,8 @@ class VoteDetail < ApplicationRecord
   belongs_to :vote
   belongs_to :choice
 
+  acts_as_list scope: :vote
+
   validates :status, presence: true
   validates :vote_id, uniqueness: { scope: :choice_id }
 

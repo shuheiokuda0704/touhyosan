@@ -4,14 +4,17 @@
 
 import { application } from "./application"
 
-import DraggableController from "./draggable_controller"
-application.register("draggable", DraggableController)
+import ExtendedSortableController from "./extended_sortable_controller"
+application.register("extended-sortable", ExtendedSortableController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
 import ModalController from "./modal_controller"
 application.register("modal", ModalController)
+
+import SortableController from "./sortable_controller"
+application.register("sortable", SortableController)
 
 import TextareaAutosizeController from "./textarea_autosize_controller"
 application.register("textarea-autosize", TextareaAutosizeController)

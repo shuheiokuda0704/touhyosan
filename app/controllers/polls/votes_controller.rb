@@ -52,7 +52,7 @@ module Polls
     def vote_params
       params.require(:vote).permit(:user_name,
                                    :comment,
-                                   vote_details_attributes: %i[id choice_id status])
+                                   vote_details_attributes: %i[id choice_id status position])
     end
   end
 end
